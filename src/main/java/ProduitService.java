@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProduitService {
-
        private List<Produit> produits;
         public ProduitService() {
             this.produits = new ArrayList<>();
