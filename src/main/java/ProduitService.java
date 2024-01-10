@@ -24,12 +24,5 @@ public class ProduitService {
             }
             throw new Exception("Produit non trouvé.");
         }
-        public Produit lireProduit(Long id) throws Exception {
-            for (Produit produit : produits) {
-                if (produit.getId().equals(id)) {
-                    return produit;
-                }
-            }
-            throw new Exception("Produit non trouvé.");
-        }
+
 }
