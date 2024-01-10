@@ -16,5 +16,12 @@ public class ProduitService {
             }
             produits.add(produit);
         }
-	  
+	          public Produit lireProduit(Long id) throws Exception {
+            for (Produit produit : produits) {
+                if (produit.getId().equals(id)) {
+                    return produit;
+                }
+            }
+            throw new Exception("Produit non trouvé.");
+        }
 }
