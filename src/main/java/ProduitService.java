@@ -25,6 +25,7 @@ public class ProduitService {
             throw new Exception("Produit non trouvé.");
         }
 
+<<<<<<< HEAD
         public void mettreAJourProduit(Produit produit) throws Exception {
             if (!produitExiste(produit.getId())) {
                 throw new Exception("Produit non trouvé pour la mise à jour.");
@@ -34,4 +35,6 @@ public class ProduitService {
             }
 
         }
+=======
+>>>>>>> 75c55bbc16374d5a0cb05a9b9f7f144aa5b613f9
 }
