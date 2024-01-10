@@ -32,5 +32,6 @@ public class ProduitService {
             if (produit.getPrix() < 0 || produit.getQuantite() < 0) {
                 throw new Exception("Le prix et la quantité doivent être positifs.");
             }
+
         }
 }
