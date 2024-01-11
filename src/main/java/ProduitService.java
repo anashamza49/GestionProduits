@@ -24,8 +24,11 @@ public class ProduitService {
             }
             throw new Exception("Produit non trouvé.");
         }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
+=======
+>>>>>>> 7cc17bd03ffb4cbbd160b1e3947823a97d1c93ab
         public void mettreAJourProduit(Produit produit) throws Exception {
             if (!produitExiste(produit.getId())) {
                 throw new Exception("Produit non trouvé pour la mise à jour.");
@@ -35,6 +38,22 @@ public class ProduitService {
             }
 
         }
+<<<<<<< HEAD
 =======
 >>>>>>> 75c55bbc16374d5a0cb05a9b9f7f144aa5b613f9
+=======
+        public void supprimerProduit(Long id) throws Exception {
+            if (!produitExiste(id)) {
+                throw new Exception("Produit non trouvé pour la suppression.");
+            }
+            produits.removeIf(produit -> produit.getId().equals(id));
+        }
+        private boolean produitExiste(Long id) {
+            return produits.stream().anyMatch(produit -> produit.getId().equals(id));
+        }
+        private boolean produitExiste(String nom) {
+            return produits.stream().anyMatch(produit -> produit.getNom().equals(nom));
+        }
+
+>>>>>>> 7cc17bd03ffb4cbbd160b1e3947823a97d1c93ab
 }
