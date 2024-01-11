@@ -45,5 +45,5 @@ public class ProduitService {
         private boolean produitExiste(String nom) {
             return produits.stream().anyMatch(produit -> produit.getNom().equals(nom));
         }
-}
+
 }
